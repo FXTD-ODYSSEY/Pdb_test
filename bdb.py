@@ -43,7 +43,6 @@ class Bdb:
         self._set_stopinfo(None, None)
 
     def trace_dispatch(self, frame, event, arg):
-        print "trace_dispatch",frame,event,arg
         if self.quitting:
             return # None
         if event == 'line':
