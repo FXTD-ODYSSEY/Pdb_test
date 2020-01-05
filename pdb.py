@@ -780,7 +780,6 @@ class Pdb(bdb.Bdb, cmd.Cmd):
             pass
 
     def do_list(self, arg):
-        print "arg",[arg]
         self.lastcmd = 'list'
         last = None
         if arg:
